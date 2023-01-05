@@ -45,7 +45,7 @@ function App() {
               </button>
             </div>
           </div>
-        ))}
+//Eddig itt volt az 57-es sorban lévő content
         {isShown && (
           <div id="window" onClick={handleClickClose}>
             <div className="details">
@@ -53,7 +53,8 @@ function App() {
             </div>
             <div className="close">Close</div>
           </div>
-        )}
+          )}
+                ))}
       </div>
     </>
   );

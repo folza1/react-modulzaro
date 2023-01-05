@@ -41,15 +41,17 @@ function App() {
             </div>
             <div id="reszletek">
               <button id="buttonDetails" onClick={handleClick}>
-                Részletek
+                Details
               </button>
             </div>
           </div>
         ))}
         {isShown && (
           <div id="window" onClick={handleClickClose}>
-            <div className="details">Részletek</div>
-            <div className="close">Bezárás</div>
+            <div className="details">
+              Details like obj.title in curly braces
+            </div>
+            <div className="close">Close</div>
           </div>
         )}
       </div>

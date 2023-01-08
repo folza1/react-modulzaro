@@ -44,14 +44,14 @@ function App() {
                 Details
               </button>
             </div>
+            {isShown && (
+              <div id="window" onClick={handleClickClose}>
+                <div className="details">{obj.id}</div>
+                <div className="close">Close</div>
+              </div>
+            )}
           </div>
         ))}
-        {isShown && (
-          <div id="window" onClick={handleClickClose}>
-            <div className="details">{obj.description}</div>
-            <div className="close">Close</div>
-          </div>
-        )}
       </div>
     </>
   );
